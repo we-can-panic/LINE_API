@@ -4,8 +4,8 @@ LINE botとGASを連携させる際のユーティリティを作ったので公
 
 ## 概要
 LINE botで検索したら引っかかるこういうやつ→https://qiita.com/hakshu/items/55c2584cf82718f47464 のGAS部分をつくりました。  
-いまは各々金額を保存・計算する機能メインで作ってます。  
-おのおのGASを開いて`main.gs`と`sheetutils.gs`をコピペして値を書き換えて運用してください。
+今は各々金額を保存・計算する機能メインで作ってます。  
+各々GASを開いて`main.gs`と`sheetutils.gs`をコピペして値を書き換えて運用してください。
 
 書き換える項目は  
 - `main.gs`の
@@ -14,9 +14,9 @@ LINE botで検索したら引っかかるこういうやつ→https://qiita.com/
 - `sheetutils.gs`の
   - スプレッドシートのID(2行目)
 
-あと、スプレッドシートを用意してください。  
-フォーマットは↓で、タブ名は「LINE用」です。
-
+あとスプレッドシートを用意してください。  
+フォーマットは↓で、タブ名は「LINE用」です。  
+![sample](https://github.com/we-can-panic/LINE_API/blob/main/example1.png)
 
 ### デフォルトの機能
 - 登録
