@@ -96,10 +96,15 @@ function fill_len(arr, len) {
   return arr
 }
 
-function sum(arr) {
-  return arr.reduce(function(prev, current, i, arr) {
+function sum(arr) {  
+  result = arr.reduce(function(prev, current, i, arr) {
     return Number(prev)+Number(current);
   });
+  if (result==undefined) {
+    return 0;
+  } else {
+    return result;
+  }
 }
 
 function transpose(a) {
@@ -110,7 +115,7 @@ function getSumValue(data) {
   result = "";
   for (var k in data["user"]) {
     if (data["user"][k]["名前"]=="名前") continue
-    result += `${data["user"][k]["名前"]}\t${sum(data["user"][k]["金額"])}円\n`
+    result += `${data["user"][k]["名前"]}→\t${sum(data["user"][k]["金額"])}円\n`
   }
   return result;
 }
